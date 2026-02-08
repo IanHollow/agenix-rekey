@@ -36,10 +36,8 @@ let
 
   # Returns the outPath/drvPath for the secrets of a given host, without
   # triggering a build of the derivation.
-  outPathFor =
-    hostCfg: toString (derivationFor hostCfg).outPath;
-  drvPathFor =
-    hostCfg: toString (derivationFor hostCfg).drvPath;
+  outPathFor = hostCfg: toString (derivationFor hostCfg).outPath;
+  drvPathFor = hostCfg: toString (derivationFor hostCfg).drvPath;
   relativeToFlake =
     filePath:
     let
